@@ -188,7 +188,7 @@ class auto_g2p:
 
     def __call__(self, text:str):
         tokens = re.split(r'([,.!? ])', text)
-        print(tokens)
+    
         text = self.text_convertor(tokens)
         return text
     
@@ -220,7 +220,6 @@ class auto_g2p:
             else:
                 text = self.g2p_map[lang](token)
 
-            print(lang)
             result.extend(text)
         return "".join(result)
 
