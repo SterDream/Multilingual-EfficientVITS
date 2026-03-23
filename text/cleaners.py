@@ -1,6 +1,6 @@
 import re
 import unicodedata
-from phonemize.text_to_IPA_converter import auto_g2p
+from .phonemize.text_to_IPA_converter import auto_g2p
 
 
 # Regular expression matching whitespace:
